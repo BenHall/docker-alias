@@ -2,14 +2,18 @@
 # Docker aliases
 # ------------------------------------
 
-# All Running Containers
+# All running containers
 alias dp = "docker ps"
 
-# Get process included stop container
+# Get all containers
 alias dpa="docker ps -a"
+
+# Remove all stopped containers
+alias dpr='docker rm $(docker ps -q -a);'
 
 # Get images
 alias di="docker images"
 
 # Docker Stats for all running containers
 alias dsa='docker ps -q | xargs docker stats'
+
