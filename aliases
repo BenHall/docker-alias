@@ -17,3 +17,5 @@ alias di="docker images"
 # Docker Stats for all running containers
 alias dsa='docker ps -q | xargs docker stats'
 
+# Docker build
+alias db='docker build -t="$1" .'
