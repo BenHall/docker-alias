@@ -1,0 +1,15 @@
+# ------------------------------------
+# Docker aliases
+# ------------------------------------
+
+# All Running Containers
+alias dp = "docker ps"
+
+# Get process included stop container
+alias dpa="docker ps -a"
+
+# Get images
+alias di="docker images"
+
+# Docker Stats for all running containers
+alias dsa='docker ps -q | xargs docker stats'
