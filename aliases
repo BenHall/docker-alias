@@ -3,7 +3,7 @@
 # ------------------------------------
 
 # All running containers
-alias dp = "docker ps"
+alias dp="docker ps"
 
 # Get all containers
 alias dpa="docker ps -a"
