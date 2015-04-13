@@ -11,6 +11,9 @@ alias dpa="docker ps -a"
 # Remove all stopped containers
 alias dpr='docker rm $(docker ps -q -a);'
 
+# Remove all untagged images
+alias drmia='docker rmi $( docker images | grep '<none>' | tr -s ' ' | cut -d ' ' -f 3)'
+
 # Get images
 alias di="docker images"
 
